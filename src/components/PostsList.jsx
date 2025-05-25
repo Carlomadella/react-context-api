@@ -8,7 +8,7 @@ const PostsList = () =>{
         <div className="row">
             <div className="col-12">
                 {posts.map((post) => {
-                    return <PostCard />
+                    return <PostCard key={post.id} post={post} />
                 })}
             </div>
         </div>    
