@@ -1,4 +1,5 @@
 import PostsPage from "./page/postsPage";
+import PostsContext from "./contexts/PostsContext";
 
 function App() {
   const posts = [
@@ -9,9 +10,9 @@ function App() {
   ];
 
   return (
-    <>
+    <PostsContext.Provider value={posts}>
       <PostsPage />
-    </>
+    </PostsContext.Provider>
   )
 }
 
