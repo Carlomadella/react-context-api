@@ -1,4 +1,5 @@
 import React from "react";
+import PostsList from "../components/PostsList";
 
 const PostsPage = () =>{
     return(
@@ -9,6 +10,7 @@ const PostsPage = () =>{
                 </div>
                 <div className="col-12">
                     {}
+                    <PostsList />
                 </div>
             </div>
         </div>
